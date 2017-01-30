@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="technology.xor.chirp">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="false"
+        android:anyDensity="true"/>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/q_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:fullBackupContent="false"
+        android:name=".support.AppGlobal"
+        android:theme="@style/Theme.Bootstrap.Dark">
+        <activity android:name=".AppController">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <activity
+            android:name="technology.xor.barcodereader.BarcodeCaptureActivity"
+            android:label="Quark Reader"
+            android:parentActivityName=".mains.BeaconActivity">
+        </activity>
+
+        <activity android:name=".mains.BeaconActivity"
+            android:label="Quark"
+            android:parentActivityName=".AppController" >
+        </activity>
+
+        <activity android:name=".mains.LoginActivity"
+        android:label="Quark"
+        android:parentActivityName=".AppController" >
+        </activity>
+
+        <service android:name=".support.LocationUpdateService" />
+
+    </application>
+
+</manifest>

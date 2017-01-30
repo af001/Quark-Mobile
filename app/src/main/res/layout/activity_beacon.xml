@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/main_background" >
+
+    <TextView
+        android:id="@+id/tv_beacon_interval"
+        android:gravity="center_horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/good_gps"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:minLines="2"
+        android:textColor="@color/text"
+        style="@style/ShadowText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="beacon\n1m"/>
+
+    <TextView
+        android:id="@+id/tv_position"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:minLines="2"
+        android:textColor="@color/text"
+        style="@style/ShadowText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="position\n38.12343,-144.12543"/>
+
+    <TextView
+        android:id="@+id/tv_beacon_sent"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/tv_position"
+        android:paddingTop="2dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text"
+        style="@style/ShadowText"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Beacon sent at 10:39:24"/>
+
+    <TextView
+        android:id="@+id/tv_gps_error"
+        android:gravity="center_horizontal"
+        android:background="@color/bad_gps"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:minLines="2"
+        android:textColor="@color/text"
+        style="@style/ShadowText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="gps error\n5 m"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_beacon_label"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            style="@style/ShadowText"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Beacon" />
+
+        <Button
+            android:id="@+id/btn_tracking"
+            style="@style/ShadowText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_background_states"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Off"
+            android:textColor="@color/text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>

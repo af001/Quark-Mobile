@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "862116656985",
+    "firebase_url": "https://chirp-f14a6.firebaseio.com",
+    "project_id": "chirp-f14a6",
+    "storage_bucket": "chirp-f14a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862116656985:android:340dbb54869bb306",
+        "android_client_info": {
+          "package_name": "technology.xor.chirp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862116656985-sbch6i6m7ngsg4ecn7er98fn9ahr929j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "technology.xor.chirp",
+            "certificate_hash": "947DB6EFF63A1E548FCE0DE72C3F6CB9E0ED27B5"
+          }
+        },
+        {
+          "client_id": "862116656985-86tjnlm2paa3la8qmvu79oq9vhcn5bg7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ7xiAnOZKzXwWxdih4oCKPgNQ-8hIYt8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "862116656985-86tjnlm2paa3la8qmvu79oq9vhcn5bg7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

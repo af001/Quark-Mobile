@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/system_logout"
+        android:title="@string/action_logout"
+        android:orderInCategory="99"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/system_exit"
+        android:title="@string/action_exit"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/system_interval"
+        android:title="Wipe"
+        android:icon="@mipmap/ic_timer_white_24dp"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/system_scan"
+        android:title="Scan"
+        android:icon="@mipmap/ic_camera_alt_white_24dp"
+        app:showAsAction="always" />
+</menu>
